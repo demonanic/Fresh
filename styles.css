@@ -40,7 +40,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #topbar {
   position: absolute; top: 0; left: 0; right: 0;
   display: flex; align-items: center; gap: 6px;
-  padding: 6px calc(8px + var(--safe-r)) 6px calc(8px + var(--safe-l));
+  padding: calc(6px + env(safe-area-inset-top, 0px)) calc(8px + var(--safe-r)) 6px calc(8px + var(--safe-l));
   background: linear-gradient(180deg, rgba(10,11,16,0.92), rgba(10,11,16,0.55) 70%, transparent);
   pointer-events: none;
 }
@@ -109,7 +109,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* ---------- Controls ---------- */
 #controls {
-  position: absolute; right: calc(14px + var(--safe-r)); bottom: 14px;
+  position: absolute; right: calc(14px + var(--safe-r)); bottom: calc(14px + env(safe-area-inset-bottom, 0px));
   display: flex; flex-direction: column; gap: 10px; align-items: flex-end;
 }
 .action {
