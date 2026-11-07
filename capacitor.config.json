@@ -1,0 +1,8 @@
+{
+  "appId": "com.buzzfuzz.harvestzero",
+  "appName": "HARVEST//ZERO",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#0a0b10"
+  }
+}

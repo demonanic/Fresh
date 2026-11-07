@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>HARVEST//ZERO</title>
+  <meta name="description" content="Build a machine that increasingly plays the tedious parts for you.">
+  <meta name="theme-color" content="#0a0b10">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=JetBrains+Mono:wght@400;600;700&family=Chivo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="ui">
+    <header id="topbar">
+      <div class="res" data-res="scrap"><span class="lbl">SCRAP</span><b id="r-scrap">0</b><small id="c-scrap"></small></div>
+      <div class="res" data-res="components"><span class="lbl">COMP</span><b id="r-components">0</b><small id="c-components"></small></div>
+      <div class="res" data-res="data"><span class="lbl">DATA</span><b id="r-data">0</b><small id="c-data"></small></div>
+      <div class="res" data-res="energy"><span class="lbl">ENERGY</span><b id="r-energy">+0</b><div class="bar"><i id="b-energy"></i></div></div>
+      <div class="threat"><span class="lbl" id="threat-label">THREAT</span><div class="bar"><i id="b-threat"></i></div></div>
+      <nav class="top-actions">
+        <button id="btn-network" class="chip" title="Network overview">NET</button>
+        <button id="btn-research" class="chip" title="Research">R&amp;D</button>
+        <button id="btn-speed" class="chip" title="Simulation speed">1×</button>
+        <button id="btn-menu" class="chip" title="Menu">☰</button>
+      </nav>
+    </header>
+
+    <div id="objective"></div>
+    <div id="toasts"></div>
+    <div id="offer" hidden></div>
+    <aside id="panel" hidden></aside>
+    <div id="buildbar" hidden></div>
+
+    <div id="controls">
+      <button id="btn-build" class="action build">BUILD</button>
+      <button id="btn-interact" class="action interact">MINE</button>
+    </div>
+    <div id="hint"></div>
+
+    <div id="modal" hidden><div class="modal-card" id="modal-card"></div></div>
+  </div>
+
+  <div id="rotate"><div>↻</div><p>Rotate your device to landscape</p></div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
