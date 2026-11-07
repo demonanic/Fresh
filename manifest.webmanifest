@@ -1,0 +1,11 @@
+{
+  "name": "HARVEST//ZERO",
+  "short_name": "HARVEST//ZERO",
+  "description": "Build a machine that increasingly plays the tedious parts for you.",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0a0b10",
+  "theme_color": "#0a0b10",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
